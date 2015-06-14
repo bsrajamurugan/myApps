@@ -52,7 +52,7 @@ function jsonarraytotbl(jsonarray,dggrid){
     {
         var tr="<tr>";
         var tdedit="<td Width=\"50px\"><a href=/HadoopDemoApp/main/home.jsp?uid="+jsonarray[i]["uid"]+">Edit</a></td>";
-        var td1="<td width=\"60px\">"+jsonarray[i]["uid"]+"</td>";
+        var td1="<td width=\"70px\">"+jsonarray[i]["uid"]+"</td>";
         var td2="<td width=\"100px\">"+jsonarray[i]["project"]+"</td>";
         var td3="<td width=\"100px\">"+jsonarray[i]["tasktype"]+"</td>"
         var td4="<td width=\"100px\">"+jsonarray[i]["taskname"]+"</td>";
