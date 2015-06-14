@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <filter>
+        <filter-name>SessionCheckFilter</filter-name>
+        <filter-class>com.hadoop.demo.SessionCheckFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SessionCheckFilter</filter-name>
+        <!--url-pattern>/app/*</url-pattern-->
+        <!-- url from where you implement the filtering -->
+        <url-pattern>/main/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.hadoop.demo.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getreports</servlet-name>
+        <servlet-class>com.hadoop.demo.getreports</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getchart1data</servlet-name>
+        <servlet-class>com.hadoop.demo.getchart1data</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getreports</servlet-name>
+        <url-pattern>/getreports</url-pattern>
+        <url-pattern>/main/getreports</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+        <url-pattern>/main/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getchart1data</servlet-name>
+        <url-pattern>/getchart1data</url-pattern>
+        <url-pattern>/main/getchart1data</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <resource-ref>
+        <res-ref-name>jdbc/mySQLappdb</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+</web-app>

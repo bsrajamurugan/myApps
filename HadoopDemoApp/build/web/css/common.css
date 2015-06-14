@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 7, 2015, 12:27:15 AM
+    Author     : raj
+*/
+
+
+html { height: 100%; }
+
+body {
+    width: 90%;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #563c55 url(../images/blurred.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.main {
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    float: left;
+    padding:10px;
+    color: #ffffff;
+}
+
+.right{
+    line-height:30px;
+    background-color:transparent;
+    height:300px;
+    width:20%;
+    float:right;
+    padding:5px;
+}
+
+#divdggrid  {
+   
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    float: bottom;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:right;
+    padding:5px;	 	 
+}
+
+.charts {
+    alignment-adjust: central;
+    position: relative;
+    float: left;
+    
+}

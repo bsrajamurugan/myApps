@@ -1,0 +1,293 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 6, 2015, 9:34:44 PM
+    Author     : raj
+*/
+html { height: 100%; }
+
+body {
+    background: #563c55 url(../images/blurred.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.container {
+	width: 100%;
+	position: relative;
+}
+.container > header {
+    margin: 10px;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.container > header h1 {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0;
+    position: relative;
+    font-weight: 300;
+    color: #666;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+}
+
+.container > header h2 {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 15px 0 5px 0;
+    color: #666;
+    font-family: Cambria, Georgia, serif;
+    font-style: italic;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+}
+
+.loginform {
+    /* Size and position */
+    width: 340px;
+    margin: 60px auto 30px;
+    padding: 15px;
+    position: relative;
+
+    /* Styles */
+    background: #fffaf6;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow:
+        0 2px 2px rgba(0,0,0,0.2),        
+        0 1px 5px rgba(0,0,0,0.2),        
+        0 0 0 12px rgba(255,255,255,0.4); 
+}
+
+.loginform h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #bdb5aa;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EBE6E2;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.loginform h1 .log-in,
+.loginform h1 .sign-up {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.loginform h1 .log-in {
+    color: #6c6763;
+    padding-right: 2px;
+}
+
+.loginform h1 .sign-up {
+    color: #ffb347;
+    padding-left: 2px;
+}
+
+.loginform .float {
+    width: 50%;
+    float: left;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,1);
+}
+
+.loginform .float:first-of-type {
+    padding-right: 5px;
+}
+
+.loginform .float:last-of-type {
+    padding-left: 5px;
+}
+
+.loginform label {
+    display: block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 11px;
+}
+
+.loginform label i {
+    margin-right: 5px; /* Gap between icon and text */
+    display: inline-block;
+    width: 10px;
+}
+
+.loginform input[type=text],
+.loginform input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loginform input[type=text]:hover,
+.loginform input[type=password]:hover {
+    border-color: #CCC;
+}
+
+.loginform label:hover ~ input {
+    border-color: #CCC;
+}
+
+.loginform input[type=text]:focus,
+.loginform input[type=password]:focus {
+    border-color: #BBB;
+    outline: none; /* Remove Chrome's outline */
+}
+
+.loginform .loginbutton {
+    /* Size and position */
+    width: 49%;
+    height: 38px;
+    float: right;
+    position: relative;
+
+    /* Styles */
+    box-shadow: inset 0 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+
+    /* Font styles */
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 38px; /* Same as height */
+    text-align: center;
+    font-weight: bold;
+}
+
+.loginform .loginbutton {
+    margin-right: 1%;
+    background: #34a5cf; /* Fallback */
+    background: -moz-linear-gradient(#34a5cf, #2a8ac4);
+    background: -ms-linear-gradient(#34a5cf, #2a8ac4);
+    background: -o-linear-gradient(#34a5cf, #2a8ac4);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#34a5cf), to(#2a8ac4));
+    background: -webkit-linear-gradient(#34a5cf, #2a8ac4);
+    background: linear-gradient(#34a5cf, #2a8ac4);
+    border: 1px solid #2b8bc7;
+    color: #ffffff;
+    text-shadow: 0 -1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.loginform
+.loginbutton:hover {
+    box-shadow: 
+        inset 0 1px rgba(255,255,255,0.3), 
+        inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+.loginform .loginbutton:active{
+    top: 1px;
+}
+
+.no-boxshadow .loginform .loginbutton:hover {
+    background: #2a8ac4;
+}
+
+.loginform p:last-of-type {
+    clear: both;    
+}
+
+.loginform .opt {
+    text-align: right;
+    margin-right: 3px;
+}
+
+.loginform label[for=showPassword] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.loginform input[type=checkbox] {
+    vertical-align: middle;
+    margin: -1px 5px 0 1px;
+}
+
+/*.icon-user:before                 { content: "\f007"; }*/
+
+.icon-user:before {
+    /*content: url('../images/User-blue-icon.png')2px;*/
+    content: "";
+    display: block;
+    content: url('../images/user.png');
+    transform: scale(.65);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: -7px 6px 0 0;
+    
+}
+.icon-lock:before {
+    /*content: url('../images/User-blue-icon.png')2px;*/
+    content: "";
+    display: block;
+    content: url('../images/lock.png');
+    transform: scale(.65);
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: -7px 0 0 -3px;
+    
+}
+
+.icon-unlock:before {
+    /*content: url('../images/User-blue-icon.png')2px;*/
+    content: "";
+    display: block;
+    content: url('../images/unlock.png');
+    transform: scale(.65);
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: -7px 0 0 -3px;
+    
+}
