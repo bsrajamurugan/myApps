@@ -1,5 +1,5 @@
-users/****** Object:  Table devtasks    Script Date: 8/9/2014 9:59:03 PM ******/
-
+/****** Object:  Table devtasks    Script Date: 8/9/2014 9:59:03 PM ******/
+--users
 
 CREATE TABLE devtasks (
     taskname varchar(100) NULL,
