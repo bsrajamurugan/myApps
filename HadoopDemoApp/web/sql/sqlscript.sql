@@ -1,5 +1,6 @@
 /****** Object:  Table devtasks    Script Date: 8/9/2014 9:59:03 PM ******/
 --users
+--test comment
 
 CREATE TABLE devtasks (
     taskname varchar(100) NULL,
